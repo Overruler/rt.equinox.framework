@@ -26,8 +26,9 @@
    <extension
          id="testCardinality01"
          point="org.eclipse.core.runtime.applications">
+         <!-- cardinality changed from "10" to "1" to prevent error marker showing in IDE -->
       <application
-            cardinality="10"
+            cardinality="1"
             thread="any"
             visible="true">
          <run

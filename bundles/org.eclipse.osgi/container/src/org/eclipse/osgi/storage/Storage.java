@@ -1131,7 +1131,7 @@ public class Storage {
 						continue; // ignore system bundle
 					}
 					@SuppressWarnings({"rawtypes", "unchecked"})
-					StorageHook<Object, Object> hook = generation.getStorageHook((Class) factory.getClass());
+					StorageHook<Object, Object> hook = generation.<Object, Object, StorageHook<Object, Object>>getStorageHook((Class) factory.getClass());
 					hook.save(saveContext, temp);
 				}
 			} finally {
